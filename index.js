@@ -71,7 +71,6 @@ allOptions.forEach((option) => {
   });
 });
 
-// Set up event listeners for input fields
 const billInput = document.querySelector("#bill");
 const peopleInput = document.querySelector("#people");
 const checkedRadio = document.querySelector('input[type="radio"]:checked');
@@ -92,5 +91,5 @@ resetBtn.addEventListener("click", () => {
     const radioInput = option.querySelector('input[type="radio"]');
     radioInput.checked = false;
   });
-    localStorage.removeItem("bill");
+  localStorage.removeItem("bill");
 });
